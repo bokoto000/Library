@@ -12,6 +12,9 @@ private:
 public:
 	User();
 	User(std::string,std::string, bool);
+	std::string getUsername();
+	bool comparePasswords(std::string);
+	bool isUserAdmin();
 };
 
 #endif
