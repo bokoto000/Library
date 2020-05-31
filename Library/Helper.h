@@ -5,9 +5,9 @@
 
 namespace helper {
 
-	std::vector<std::string> splitString(std::string s);
-	int inputInt();
-	double inputDouble();
+	std::vector<std::string> splitString(std::string s);/*split string into a vector of strings*/
+	int inputInt(); /*input from cin and refuses everything but int type of input*/
+	double inputDouble();/*input from cin and refuses everything but double type of input*/
 }
 
 #endif

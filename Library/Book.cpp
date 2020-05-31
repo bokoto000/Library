@@ -6,7 +6,7 @@ Book::Book()
 }
 
 Book::Book(std::string _author, std::string _title, std::string _genre, std::string _description, int _yearOfPublishing, std::vector<std::string> _tags,
-	double _rating, int _id)
+	double _rating)
 {
 	author = _author;
 	title = _title;
@@ -15,7 +15,6 @@ Book::Book(std::string _author, std::string _title, std::string _genre, std::str
 	yearOfPublishing = _yearOfPublishing;
 	tags = _tags;
 	rating = _rating;
-	id = _id;
 }
 
 void Book::info()
@@ -72,6 +71,11 @@ std::string Book::getGenre() const
 int Book::getId() const
 {
 	return id;
+}
+
+void Book::setId(int _id)
+{
+	id = _id;
 }
 
 bool Book::hasTag(std::string tag) const

@@ -18,6 +18,16 @@ std::string User::getUsername()
 	return username;
 }
 
+std::string User::getPassword()
+{
+	return password;
+}
+
+int User::getIsAdmin()
+{
+	return isAdmin;
+}
+
 bool User::comparePasswords(std::string salt)
 {
 	if (password == salt)return true;

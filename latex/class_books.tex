@@ -1,0 +1,74 @@
+\hypertarget{class_books}{}\doxysection{Books Class Reference}
+\label{class_books}\index{Books@{Books}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_books_a5675d6db4958ba53129cd2e25f94e239}\label{class_books_a5675d6db4958ba53129cd2e25f94e239}} 
+void {\bfseries all} ()
+\item 
+\mbox{\Hypertarget{class_books_a7951d7984efdc3bbc5b2f4c5dda180cf}\label{class_books_a7951d7984efdc3bbc5b2f4c5dda180cf}} 
+void {\bfseries info} (int isbn\+\_\+value)
+\item 
+\mbox{\Hypertarget{class_books_ab0d6c39c7c6a461233976df263e881c0}\label{class_books_ab0d6c39c7c6a461233976df263e881c0}} 
+void {\bfseries find} (std\+::string, std\+::string)
+\item 
+\mbox{\Hypertarget{class_books_a1ce2294a9256fcffc2e08d39b7cefab7}\label{class_books_a1ce2294a9256fcffc2e08d39b7cefab7}} 
+std\+::vector$<$ \mbox{\hyperlink{class_book}{Book}} $>$ {\bfseries find\+By\+Title} (std\+::string)
+\item 
+\mbox{\Hypertarget{class_books_ae8c61892eb79e5177fc86917eca4b1d2}\label{class_books_ae8c61892eb79e5177fc86917eca4b1d2}} 
+std\+::vector$<$ \mbox{\hyperlink{class_book}{Book}} $>$ {\bfseries find\+By\+Author} (std\+::string)
+\item 
+\mbox{\Hypertarget{class_books_ae37a2caa4f28587c72868873d1dafc48}\label{class_books_ae37a2caa4f28587c72868873d1dafc48}} 
+std\+::vector$<$ \mbox{\hyperlink{class_book}{Book}} $>$ {\bfseries find\+By\+Tag} (std\+::string)
+\item 
+\mbox{\Hypertarget{class_books_a2306c63a0ec6e3aa544c64a10e94b5f2}\label{class_books_a2306c63a0ec6e3aa544c64a10e94b5f2}} 
+bool {\bfseries sort} (std\+::string, std\+::string)
+\item 
+\mbox{\Hypertarget{class_books_a0c343759ad8d1664f4470bfbdd011d0a}\label{class_books_a0c343759ad8d1664f4470bfbdd011d0a}} 
+void {\bfseries save} (std\+::ofstream \&)
+\item 
+\mbox{\Hypertarget{class_books_a9f3bcbfdc6fb7780e12035b1b3b8dd28}\label{class_books_a9f3bcbfdc6fb7780e12035b1b3b8dd28}} 
+void {\bfseries read} (std\+::ifstream \&)
+\item 
+\mbox{\Hypertarget{class_books_a7872ed8d1202ef5bad1e60650d8bf7dd}\label{class_books_a7872ed8d1202ef5bad1e60650d8bf7dd}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{class_books_ae2513f124df9c43233e877b5b7738e16}\label{class_books_ae2513f124df9c43233e877b5b7738e16}} 
+bool {\bfseries add} (\mbox{\hyperlink{class_book}{Book}} book)
+\item 
+\mbox{\Hypertarget{class_books_a7d98f2de66f848c0824156bdc70b695e}\label{class_books_a7d98f2de66f848c0824156bdc70b695e}} 
+bool {\bfseries remove} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_books_a907ed6ad7ad77421321515db781469fc}\label{class_books_a907ed6ad7ad77421321515db781469fc}} 
+static bool {\bfseries compare\+Title\+Asc} (const \mbox{\hyperlink{class_book}{Book}} \&, const \mbox{\hyperlink{class_book}{Book}} \&)
+\item 
+\mbox{\Hypertarget{class_books_ae9fafd42a57f3f4d75f5f2da8874e0c6}\label{class_books_ae9fafd42a57f3f4d75f5f2da8874e0c6}} 
+static bool {\bfseries compare\+Title\+Desc} (const \mbox{\hyperlink{class_book}{Book}} \&a, const \mbox{\hyperlink{class_book}{Book}} \&b)
+\item 
+\mbox{\Hypertarget{class_books_ab0f886f4802343ad29451706bf9c8c03}\label{class_books_ab0f886f4802343ad29451706bf9c8c03}} 
+static bool {\bfseries compare\+Author\+Desc} (const \mbox{\hyperlink{class_book}{Book}} \&a, const \mbox{\hyperlink{class_book}{Book}} \&b)
+\item 
+\mbox{\Hypertarget{class_books_a028c015e0c17e4bc686fed3c32d02c9f}\label{class_books_a028c015e0c17e4bc686fed3c32d02c9f}} 
+static bool {\bfseries compare\+Author\+Asc} (const \mbox{\hyperlink{class_book}{Book}} \&a, const \mbox{\hyperlink{class_book}{Book}} \&b)
+\item 
+\mbox{\Hypertarget{class_books_a4a729c0aadb632f72845731fac4c889d}\label{class_books_a4a729c0aadb632f72845731fac4c889d}} 
+static bool {\bfseries compare\+Year\+Desc} (const \mbox{\hyperlink{class_book}{Book}} \&a, const \mbox{\hyperlink{class_book}{Book}} \&b)
+\item 
+\mbox{\Hypertarget{class_books_aaf06db94e302a6b3eb43c482172274c3}\label{class_books_aaf06db94e302a6b3eb43c482172274c3}} 
+static bool {\bfseries compare\+Year\+Asc} (const \mbox{\hyperlink{class_book}{Book}} \&a, const \mbox{\hyperlink{class_book}{Book}} \&b)
+\item 
+\mbox{\Hypertarget{class_books_ae2c64c7d9f1044b2677b6e0e7656e242}\label{class_books_ae2c64c7d9f1044b2677b6e0e7656e242}} 
+static bool {\bfseries compare\+Rating\+Asc} (const \mbox{\hyperlink{class_book}{Book}} \&a, const \mbox{\hyperlink{class_book}{Book}} \&b)
+\item 
+\mbox{\Hypertarget{class_books_a349aca5f944507aa820015490d256290}\label{class_books_a349aca5f944507aa820015490d256290}} 
+static bool {\bfseries compare\+Rating\+Desc} (const \mbox{\hyperlink{class_book}{Book}} \&a, const \mbox{\hyperlink{class_book}{Book}} \&b)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Books.\+h\item 
+Books.\+cpp\end{DoxyCompactItemize}

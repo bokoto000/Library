@@ -7,8 +7,8 @@
 #include "CommandLine.h"
 int main()
 {
-    Book book("Test", "test", "test", "test", 1999, { "Shit","Lol" }, 9, 1);
-    Book book1("Test1", "test1", "test", "test", 1999, { "Shit","Lol" }, 9, 1);
+    Book book("Test", "test", "test", "test", 1999, { "Shit","Lol" }, 9);
+    Book book1("Test1", "test1", "test", "test", 1999, { "Shit","Lol" }, 9);
     System system;
     CommandLine cmd(&system);
     Books books;

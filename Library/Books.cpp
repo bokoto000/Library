@@ -120,6 +120,9 @@ bool Books::add(Book book)
 			}
 		}
 	}
+	if (books.size() > 0)
+		book.setId(books[books.size() - 1].getId() + 1);
+	else book.setId(0);
 	books.push_back(book);
 	std::cout << "Book added" << std::endl;
 	return true;
@@ -173,7 +176,6 @@ void Books::save(std::ofstream& database)
 			database<< tags[i]<< " ";
 		}
 		database << std::endl;
-
 	}
 }
 

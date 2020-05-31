@@ -11,7 +11,6 @@ namespace helper {
 		std::istream_iterator<std::string> begin(ss);
 		std::istream_iterator<std::string> end;
 		std::vector<std::string> vstrings(begin, end);
-		std::copy(vstrings.begin(), vstrings.end(), std::ostream_iterator<std::string>(std::cout, "\n"));
 		return vstrings;
 	}
 	int inputInt() {

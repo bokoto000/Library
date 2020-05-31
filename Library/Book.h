@@ -16,8 +16,9 @@ private:
 	int id;
 public:
 	Book();
-	Book(std::string, std::string, std::string,std::string, int, std::vector<std::string>, double, int);
-	void info();
+	Book(std::string, std::string, std::string,std::string, int, std::vector<std::string>, double);/*constructor for book using the data*/
+	void info(); /* Prints title,author,genre, id*/
+	//getters and setters
 	std::string getTitle() const;
 	std::string getAuthor() const;
 	std::string getDescription() const;
@@ -26,6 +27,7 @@ public:
 	double getRating() const;
 	std::string getGenre() const;
 	int getId() const;
+	void setId(int);
 	bool hasTag(std::string) const;
 };
 

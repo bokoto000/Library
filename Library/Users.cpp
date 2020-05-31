@@ -16,7 +16,8 @@ User* Users::logIn(std::string username, std::string password)
 {
 	for (int i = 0; i < this->size; i++) {
 		if (usersVector[i].getUsername() == username) {
-			if (usersVector[i].comparePasswords(password))return &usersVector[i];
+			bool compare = usersVector[i].comparePasswords(password);
+			if (compare)return &usersVector[i];
 		}
 	}
 	return NULL;
@@ -25,6 +26,14 @@ User* Users::logIn(std::string username, std::string password)
 int Users::getSize()
 {
 	return this->size;
+}
+
+void Users::save(std::ofstream& database)
+{
+	for (int i = 0; i < this->usersVector.size(); i++) {
+		database << usersVector[i].getUsername() << " " << usersVector[i].getPassword() << " " << usersVector[i].getIsAdmin();
+		database << std::endl;
+	}
 }
 
 bool Users::remove(std::string username)
